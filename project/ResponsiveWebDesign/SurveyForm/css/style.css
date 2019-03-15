@@ -1,0 +1,22 @@
+body {
+    background: #add8e6;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  #main {
+    display: block;
+    background: white;
+    width: 60%;
+    border-radius: 5px;
+    margin: auto;
+  }
+  
+  p, #name-label{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  form {
+    
+  }

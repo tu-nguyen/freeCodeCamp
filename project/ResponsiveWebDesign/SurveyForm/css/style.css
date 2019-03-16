@@ -9,14 +9,28 @@ body {
     background: white;
     width: 60%;
     border-radius: 5px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 20px;
   }
   
-  p, #name-label{
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .label {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
   }
   
-  form {
-    
+  .rowRight {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+    margin:12px;
+  }
+  
+  .test, input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
   }

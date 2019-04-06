@@ -4,73 +4,66 @@
 </head>
 
 <body>
-    <h1 id="title">Survey Form</h1>
+  <h1 id="title">Survey Form</h1>
 
-    <div id="main">
+  <div id="main">
 
-        <p id="description">Let us know how we can improve freeCodeCamp</p>
-        <form id="survey-form">
-            <div class="row">
-                <div class="label">
-                    <label id="name-label">* Name: </div>
-                <div class="rowRight">
-                    <input type="text" required="true" id="name" placeholder="Enter your name">
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="label">
-                    <label id="email-label">
-                        * Email: </label>
-                </div>
-                <div class="rowRight">
-                    <input type="email" required="true" id="email" placeholder="Enter your Email">
-                </div>
-            </div>
-            <div class="row">
-                <div class="label">
-                    <label id="number-label">
-                        * Age: </label>
-                </div>
-                <div class="rowRight">
-                    <input type="number" id="number" placeholder="Age" min="13" max="99">
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="label">
-                    <label id="role-label">Which option best describes your current role?</label>
-                </div>
-                <select id="dropdown">
-                    <option value="Student">Student</option>
-                    <option value="Full Time Job">Full Time Job</option>
-                    <option value="Full Time Learner">Full Time Learner</option>
-                    <option value="Prefer not to say">Prefer not to say</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+    <form id="survey-form">
+      <div class="row">
+        <div class="label">
+          <label id="name-label">* Name: </div>
+          <div class="rowRight">
+      <input type="text" required="true" id = "name" placeholder="Enter your name">
+            </label></div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label id="email-label">
+          * Email:  </label></div>
+        <div class="rowRight">
+          <input type="email" required="true" id="email" placeholder="Enter your Email"></div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label id="number-label">
+          * Age:  </label></div>
+        <div class="rowRight">
+          <input type="number" id="number" placeholder="Age" min="13" max="99"></div>
+      </div><br>
+      <div class="row">
+        <div class="label">
+          <label id="role-label">Which option best describes your current role?</label></div>
+        <div class="rowRight">
+          <select id="dropdown">
+          <option value="select_an_option" disabled>Select an Option</option>
+        <option value="Student">Student</option>
+        <option value="Full Time Job">Full Time Job</option>
+        <option value="Full Time Learner">Full Time Learner</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
+          </select></div>
+      </div>
 
-            <div class="row">
-                <div class="label">
-                    <label id="rec-label">* How likely is that you would recommend freeCodeCamp to a friend?</label>
-                </div>
-                <div class="rowRight">
-                    <input type="radio" id="Definately" name="test" value="Definately">
-                    <label for="Definately">Definately</label>
+      <div class="row">
+        <div class="label">
+          <label id="rec-label">* How likely is that you would recommend freeCodeCamp to a friend?</label></div>
+        <div class="rowRight">
+          <input type="radio" id="Definately" name="test" value="Definately">
+          <label for="Definately">Definately</label>
 
+          <div>
+            <input type="radio" id="Maybe" name="test" value="Maybe">
+            <label for="Maybe">Maybe</label>
+          </div>
 
-                    <div>
-                        <input type="radio" id="Maybe" name="test" value="Maybe">
-                        <label for="Maybe">Maybe</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="Not sure" name="test" value="Not sure">
-                        <label for="Not sure">Not sure</label>
-                    </div>
-                </div>
-            </div>
-            <!--label class="container">
+          <div>
+            <input type="radio" id="Not sure" name="test" value="Not sure">
+            <label for="Not sure">Not sure</label>
+          </div>
+        </div>
+      </div>
+      <!--label class="container">
       <input type="radio" name="test"> Definately
       </label><br>
       <label class="container">
@@ -86,49 +79,52 @@
         <option value="Open Source" name="test">Open Source</option>
         </select><br-->
 
-            <div class="row">
-                <div class="label">
-                    <label id="improve-label">
-                        Things that should be improved in the future (Check all that apply):
-                    </label>
-                </div>
-                <div class="rowRight">
-                    <label class="container">Front-end Projects
-                        <input type="checkbox" value="frontend">
-                        <span class="checkmark"></span>
-                    </label>
+      <div class="row">
+        <div class="label">
+          <label id="improve-label">
+      Things that should be improved in the future (Check all that apply):
+          </label></div>
 
-                    <label class="container">Back-end Projects
-                        <input type="checkbox" value="backend">
-                        <span class="checkmark"></span>
-                    </label>
+        <div class="rowRight">
+          <label class="container">Front-end Projects
+  <input type="checkbox" value="frontend">
+  <span class="checkmark"></span>
+</label>
 
-                    <label class="container">Data Visualization
-                        <input type="checkbox" value="datavisual">
-                        <span class="checkmark"></span>
-                    </label>
+          <label class="container">Back-end Projects
+  <input type="checkbox" value="backend">
+  <span class="checkmark"></span>
+</label>
 
-                    <label class="container">Challenges
-                        <input type="checkbox" value="challenges">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-            </div>
+          <label class="container">Data Visualization
+  <input type="checkbox" value="datavisual">
+  <span class="checkmark"></span>
+</label>
 
-            <br>
-            <div class="row">
-                <div class="label">
-                    <label id="suggest-label">
-                        Any Comments or Suggestions?
-                    </label>
-                </div>
-                <textarea name="myTextBox" cols="50" rows="5">
+          <label class="container">Challenges
+  <input type="checkbox" value="challenges">
+  <span class="checkmark"></span>
+</label>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="label">
+          <label id="suggest-label">
+      Any Comments or Suggestions?
+          </label>
+        </div>
+        <div class="rowRight">
+          <textarea name="myTextBox" cols="50" rows="4">
 Enter comment here...
 </textarea>
-                <br />
-                <input type="submit" id="submit" />
-            </div>
-        </form>
-    </div>
+          <br />
+        </div>
+        <input type="submit" id="submit" />
+      </div>
+
+    </form>
+  </div>
 
 </body>

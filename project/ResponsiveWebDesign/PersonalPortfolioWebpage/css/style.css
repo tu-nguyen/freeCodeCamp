@@ -1,0 +1,28 @@
+#navbar {
+    position: fixed;
+    top: 0;
+  }
+  
+  section { 
+    height: 100vh;
+  }
+  
+  #container {
+    width: 100%;
+  }
+  
+  #welcome-section {
+    width: 100%;
+  }
+  
+  #projects {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #left {
+      width:100%;
+    }
+    #main {
+      width: 100%;
+    }

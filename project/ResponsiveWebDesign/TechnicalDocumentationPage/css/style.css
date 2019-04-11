@@ -1,16 +1,57 @@
 #container {
-  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(200px, auto) 1fr;
+  grid-template-areas: "navbar" "right";
+  grid-gap: 20px;
 }
+nav#navbar {
+  grid-area: navbar;
+  position: fixed;
+  float: left;
+}
+
+nav#navbar a {
+  display: block;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: black;
+}
+
+main#main-doc {
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+code {
+  background-color: #ccc;
+  display: block;
+  padding: 20px;
+}
+
 #left {
   width: 30%;
   float: left;
 }
 #main {
   width: 70%;
-  float: left;
+  float: right;
 }
 
 @media screen and (max-width: 600px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "navbar" "main-doc";
+  }
+
+  nav#navbar {
+    position: inherit;
+  }
   #left {
     width: 100%;
   }

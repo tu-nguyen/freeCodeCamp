@@ -76,10 +76,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*   margin-top: 42px; */
-  max-width: 1000px;
+  margin-top: 42px;
+  /*   max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 .material-icons {
@@ -111,17 +111,31 @@ body {
 }
 
 .selection {
+  margin-top: 50px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  /*   width: calc(100% / 3); */
 }
 
 .choice {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
 }
 
 .price {
   background: gray;
+  color: black;
+  padding: 1px 0;
+  width: 100%;
+  font-weight: 700;
 }
 
 footer {
@@ -129,6 +143,9 @@ footer {
   text-align: right;
   left: 0;
   bottom: 0;
+
+  margin-top: 30px;
+  padding: 8px;
 }
 
 @media only screen and (max-width: 600px) {
